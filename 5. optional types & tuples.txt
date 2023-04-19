@@ -1,0 +1,27 @@
+extending interface
+
+interface One {
+
+}
+
+interface Two extends One{
+
+}
+
+1) optional operator (?)
+
+optional parameter
+function name(arg? : type)
+
+can't have required params after optional param
+
+optionals fields
+interface Name{
+    field? : type
+}
+
+optional callback
+callback?.();
+
+
+2) Tuple is an array that can have multiple types

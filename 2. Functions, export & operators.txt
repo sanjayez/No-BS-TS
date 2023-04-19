@@ -1,0 +1,38 @@
+2) Functions
+function name(arg: type): return type {
+    return value
+}
+
+//Union type
+function name(arg: type1 | type2): return type {
+    return value
+}
+
+//Promise type, might need "target":"esnext" config
+function name(arg: type1 | type2): return Promise<type> {
+    return Promise...
+}
+
+//rest
+function name(arg: type1, ...args: type[]): return type {
+    return value
+}
+
+const name = (arg: type = "defaultValue"): return type => {
+    return value
+}
+
+export default name;
+
+3) export & import:  
+export default name;
+import name from 'path'
+
+Typescript only enforces types at compile time and not runtime
+
+4) optional chaining & nullish coaelscing
+
+variable?.property1?.property2...
+
+variable1 ?? variable2 
+variable1 ?? "defaultValue"

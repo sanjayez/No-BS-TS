@@ -1,0 +1,18 @@
+export function printToFile(text: string, callback: (arg: type) => return type): return type {
+    callback();
+}
+
+1) functions as types:
+
+type needs equal sign unlike interfaces
+type FunctionType = (arg: type) => return type
+
+2) returning functions
+
+//classic closure
+export function createAdder(num: number): return function type{
+    return (val: number) => num + val;
+}
+
+const addOne = createAdder(1);
+console.log(addOne(55)) //56

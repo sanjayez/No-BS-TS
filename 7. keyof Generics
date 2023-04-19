@@ -1,0 +1,15 @@
+ function Name<Data, KeyType extends keyof Data>()
+
+ keyof lets you have keys as keys defined in Data object
+
+ Utility types:
+ create another type using existing type
+
+type Name = Partial<Type>
+Partial takes a type and makes everything in it optional
+Required takes a type and makes everything in it required
+Pick takes a type and helps you pick required fields
+
+type Name = Pick<TYPE, "field1", "field2", ...>
+
+Record helps with building a map like object

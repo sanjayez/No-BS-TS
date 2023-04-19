@@ -1,0 +1,24 @@
+interface Coordinate {
+    x: number;
+    y: number;
+}
+
+//Overloading signatures
+function parseCoordinate(obj: Coordinate): Coordinate;
+function parseCoordinate(x: number, y: number): Coordinate;
+
+//Implementation
+function parseCoordinate(arg1: unknown, arg2?: unknown): Coordinate{
+    if(typeof arg1 === 'object'){
+        return {
+            ...(arg1 as Coordinate)
+        }
+    } else {
+        x: arg1 as number,
+        y: arg2 as number
+    }
+}
+
+difference between any & unknown:
+any could be of any type
+unknown is similar to any but must be type coerced before using -> it's a safer form of any

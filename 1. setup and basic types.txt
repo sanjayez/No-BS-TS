@@ -1,0 +1,44 @@
+//install
+npm i -g typescript -D
+npm i ts-node
+
+//initate
+npx tsc --init
+
+//can config tsconfig.json
+
+//specifying typescript
+let variable: type = value;
+
+1) types
+number, string, bool, RegExp, 
+
+//arrays
+type[], Array<Type>
+
+//objects
+const objName: {
+    key1: type,
+    key2: type,
+    key3?: type //optional ?
+} = {
+    key1: value,
+    key2: value
+}
+
+//interfaces
+interface Name {
+    key: value
+    key: value
+}
+
+//Record - utility type
+const ids: Record<number, string> = {
+    10: 'a',
+    20: 'b'
+}
+
+ids[30] = 'c'
+
+
+

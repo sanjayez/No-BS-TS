@@ -1,0 +1,25 @@
+
+
+//Generic types have initally unknown type 
+function Name<T>(initial: T) {
+    let variable: T = initial;
+    //function code
+}
+
+//Once you pass in a type the function/implementaion 
+//takes the given type
+
+//Overriding generic type 
+
+function Name<T>(initial: T) {
+    let variable: T = initial;
+    //function code
+}
+
+name<type1 | type2>(type);
+
+Generic Interfaces:
+
+interface Name<T> {
+    variable: T;
+}
